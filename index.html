@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+     <link href="./css/style.css" rel="stylesheet"/>
+ 
+        <script  type="module">
+            //Importando
+            import Cadastro from './js/cadastro.js';
+        
+            window.cad = new Cadastro();
+       
+            window.cad.limparForm();
+        </script>
+
+        <meta charset="UTF-8"/>
+
+    </head>
+
+    <body>
+
+        <div id="container">
+            <div class="centro"> <input value="" type="hidden" id="id" /> </div>
+            <div class="centro"> Quantidade P (R$10) <input type="number" id="camisaP" /> </div>
+            <div class="centro"> Quantidade M (R$12) <input type="number" id="camisaM"/>  </div>
+            <div class="centro"> Quantidade G (R$15) <input type ="number" id="camisaG"/> </div>
+            <div class="centro"> 
+            
+            <button id="Salvar" class="azul" onclick="cad.salvar()" >Salvar Pedidos</button>  
+            
+            </div>
+        </div>
+
+        <div id="tbroup" >
+
+        </div>
+           
+    </body>
+    
+</html>
